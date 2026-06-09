@@ -46,41 +46,6 @@
 
 ---
 
-## 📋 MakeSense 全模型定价一览
-
-> 数据来源：api.makesense.top/models 2026-06-09 平台提供原始数据
-
-| 模型 | 输入 ¥/1M | 输出 ¥/1M | 缓存读取 ¥/1M |
-|------|:-------:|:-------:|:------------:|
-| **GPT-4** | ¥150.00 | ¥75.00 | — |
-| **GPT-4.1** | ¥4.00 | ¥16.00 | ¥1.00 |
-| **GPT-4.1-2025-04-14** | ¥10.00 | ¥40.00 | — |
-| **GPT-4.1 Mini** | ¥0.80 | ¥3.20 | ¥0.20 |
-| **GPT-4.1 Mini-2025-04-14** | ¥2.00 | ¥8.00 | — |
-| **GPT-4.1 Nano** | ¥0.20 | ¥0.80 | ¥0.05 |
-| **GPT-4.1 Nano-2025-04-14** | ¥0.50 | ¥2.00 | — |
-| **GPT-4o** | ¥5.00 | ¥2.50 | ¥2.50 |
-| **GPT-4o-2024-05-13** | ¥25.00 | ¥75.00 | — |
-| **GPT-4o-2024-08-06** | ¥12.50 | ¥6.25 | ¥6.25 |
-| **GPT-4o-2024-11-20** | ¥12.50 | ¥6.25 | ¥6.25 |
-| **GPT-4o Mini** | ¥0.75 | ¥3.00 | ¥0.375 |
-| **GPT-4o Mini-2024-07-18** | ¥0.75 | ¥3.00 | ¥0.375 |
-| **GPT-5** | ¥2.50 | ¥20.00 | ¥0.25 |
-| **GPT-5-2025-08-07** | ¥6.25 | ¥50.00 | ¥0.625 |
-| **GPT-5 Chat** | ¥6.25 | ¥50.00 | — |
-| **GPT-5 Chat Latest** | ¥6.25 | ¥50.00 | ¥0.625 |
-| **GPT-5 Codex** | ¥6.25 | ¥50.00 | — |
-| **GPT-5 High** | ¥6.25 | ¥50.00 | — |
-| **GPT-5 Mini** | ¥0.50 | ¥4.00 | ¥0.05 |
-
-> 💡 **缓存读取比普通输入便宜 50–90%**，高频重复 Prompt 场景可大幅降本。
-
-> 💡 **价格优势明显，具体节省金额因使用场景而异。访问 [api.makesense.top/models](https://api.makesense.top/models) 查看完整定价。**
-
-> 按各模型平均每次请求（输入 3K + 输出 1K tokens）估算。实际费用因使用模式而异。
-
----
-
 ## 🏆 国内中转平台一览
 
 > ⚠️ **以下信息来源于各平台公开页面，未经全量实时验证，仅供参考。**
@@ -89,7 +54,7 @@
 
 | 平台 | 官网 | 说明 |
 |------|------|------|
-| **[MakeSense 智感](https://api.makesense.top)** | api.makesense.top | 价格见上方表格，支持微信/支付宝，Token 永不过期 |
+| **[MakeSense 智感](https://api.makesence.top)** | api.makesence.top | 价格见上方表格，支持微信/支付宝，Token 永不过期 |
 | [4SAPI / New API](https://4sapi.com) | 4sapi.com | 社区活跃，详情见官网 |
 | [神马中转](https://api.whatai.cc) | api.whatai.cc | 含 Midjourney/Suno，详情见官网 |
 | [BAYLLM](https://bayllm.com) | bayllm.com | 企业级，详情见官网 |
@@ -110,7 +75,7 @@
 
 > 🎁 注册即赠 **100 万 Token** 体验额度，无需充值即可试遍全站模型。
 >
-> 👉 完整模型列表与实时价格：[api.makesense.top/models](https://api.makesense.top/models)
+> 👉 完整模型列表与实时价格：[api.makesence.top/models](https://api.makesence.top/models)
 
 ---
 
@@ -118,8 +83,8 @@
 
 | 场景 | 推荐 |
 |------|------|
-| 个人开发者 / 轻量 AI 编程 | **[MakeSense 智感](https://api.makesense.top)** — ¥9.8 起，Token 永久有效 |
-| Cursor / Claude Code / Windsurf | **[MakeSense 智感](https://api.makesense.top)** — OpenAI 协议，改 base_url 即可 |
+| 个人开发者 / 轻量 AI 编程 | **[MakeSense 智感](https://api.makesence.top)** — ¥9.8 起，Token 永久有效 |
+| Cursor / Claude Code / Windsurf | **[MakeSense 智感](https://api.makesence.top)** — OpenAI 协议，改 base_url 即可 |
 | 企业高并发 / SLA 保障 | 联系各平台客服咨询企业方案 |
 | AI 绘图 / 音乐生成 | [神马中转](https://api.whatai.cc) — Midjourney / Suno 支持 |
 | 需要全球所有模型 | [OpenRouter](https://openrouter.ai) — 原厂直连 |
@@ -129,13 +94,30 @@
 ## 🔧 3 步接入
 
 > 100% 兼容 OpenAI 协议，仅需修改 `base_url`，无需改动业务代码。
+> 数据来源：[api.makesence.top/quickstart](https://api.makesence.top/quickstart)
+
+### 接入前准备
+
+1. **注册账号**：[注册页面](https://openclaw-api.com/register?aff=MG3RJ1KN)
+2. **充值**：支付宝 / 微信扫码，Token 永久有效
+3. **创建令牌**：控制台新建 API Key（sk- 开头）
+
+### 字段值
+
+| 字段 | 值 |
+|------|-----|
+| API Base URL | `https://openclaw-api.com` |
+| CDN 推荐 | `https://cn.openclaw-api.com` |
+| API Key | `sk-xxxxxxxx` |
+
+### Python 接入示例
 
 ```python
 from openai import OpenAI
 
 client = OpenAI(
     api_key="YOUR_API_KEY",      # 替换为你的 API Key
-    base_url="https://api.makesense.top"  # 替换 base_url
+    base_url="https://api.makesence.top"  # 替换 base_url
 )
 
 response = client.chat.completions.create(
@@ -145,20 +127,17 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-**Cursor / Trae 用户** 一键配置：
-```bash
-bash <(curl https://api.makesense.top/setup-cursor.sh)
-```
-
-**支持的工具：**
+### 支持的工具
 
 | Tool | Setup |
 |------|-------|
-| [Cursor](https://cursor.sh) | Settings → Models → OpenAI API Key + Base URL |
-| [Claude Code](https://claude.ai) | `claude --api-key xxx --base-url https://api.makesense.top` |
-| [LobeChat](https://lobechat.com) | Settings → Language Model → OpenAI → Custom API URL |
-| [NextChat](https://nextchat.fun) | Settings → API Host → `https://api.makesense.top` |
-| Chatbox | Settings → API Host → `https://api.makesense.top` |
+| **Cursor / Trae** | 一键配置：`bash <(curl https://api.makesence.top/setup-cursor.sh)` |
+| **Claude Code (Mac)** | 安装：`curl -fsSL https://claude.ai/install.sh \| bash`<br>环境变量：`export ANTHROPIC_BASE_URL="https://cn.openclaw-api.com"` |
+| **Claude Code (Windows)** | 建议使用 Git Bash 运行 |
+| **Codex** | config.toml 添加 `[model_providers.OpenAI]`，`base_url = "https://cn.openclaw-api.com/v1"` |
+| **CC-Switch** | 跨平台桌面工具，统一管理 Claude Code / Codex / Gemini CLI 配置 |
+| **TRAE (字节跳动)** | Base URL 设为 `https://cn.openclaw-api.com/v1` |
+| **WorkBuddy (腾讯)** | 选择 OpenAI Compatible，Base URL：`https://cn.openclaw-api.com/v1` |
 
 ---
 
@@ -181,7 +160,7 @@ bash <(curl https://api.makesense.top/setup-cursor.sh)
 A: 官方 API 链路直连，非账号池，数据加密传输，无封号风险。
 
 **Q: 价格真的省这么多吗？**  
-A: OpenAI 官方价格从 openai.com/api/pricing **实时抓取**（2026-06-09），MakeSense 价格由平台管理员提供原始数据并经 4SAPI 截图交叉验证，主流模型普遍节省 45–93%，**可自行访问两网站核对**。
+A: 价格数据来自 [api.makesence.top/models](https://api.makesence.top/models) 实时抓取（2026-06-09），**可自行访问官网核对**。
 
 **Q: 充值未到账怎么办？**  
 A: 联系中文客服，微信/支付宝人民币充值，实时到账。
